@@ -76,7 +76,7 @@ Mention:
         - if 2 target are close (lower than range/angle resolution) the sensor see as 1 target
         - from previous if 2 target move separate only 1 target, the sensor see the stationary target as static object and terminated.
     
-    3. The built-in processor (STM32H7) seem running heat, better to install heatsink within.
+    3. The built-in processor seem running heat, better to install heatsink within.
     
     4. This sensor can detect "Ghost".
         - don't be scared, Ghost mean the fault detected. It can target more than real-life or appear target when no one.
