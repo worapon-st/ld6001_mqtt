@@ -39,10 +39,10 @@
 
 2.1 Status mode
 > host-to-module
-[0x44|0x11|0x00|0x00|checksum|0x4B]
+> [0x44|0x11|0x00|0x00|checksum|0x4B]
         
 > module-to-host
-[0x4D|0x11|0x08|0x00|SMIv|SMJv|HMIv|HMJv|RVSD|STATE|RVSD|RVSD|Checksum|0x4A]
+> [0x4D|0x11|0x08|0x00|SMIv|SMJv|HMIv|HMJv|RVSD|STATE|RVSD|RVSD|Checksum|0x4A]
  - SMIv  : Software minor version
  - SMJv  : Software major version
  - HMIv  : Hardware minor version
@@ -52,11 +52,11 @@
 
 2.2 Data mode
 > host-to-module
-[0x44|0x62|datalen|0x00|sen|0x00|0x00|0x00|0x00|0x00|0x00|0x00|Checksum|0x4B]
+> [0x44|0x62|datalen|0x00|sen|0x00|0x00|0x00|0x00|0x00|0x00|0x00|Checksum|0x4B]
  - sen   : Sensitivity 10 NORMAL / 20 HIGH 
 
 > module-to-host
-[0x4D|0x62|datalen|0x00|FAULT|NUM_TG|RSVD|RSVD|RSVD|RSVD|RSVD|RSVD|ID_TG|DIST|PITCH|YAW|RSVD|RSVD|X_COOR|Y_COOR|.........|Checksum|0x4A]
+> [0x4D|0x62|datalen|0x00|FAULT|NUM_TG|RSVD|RSVD|RSVD|RSVD|RSVD|RSVD|ID_TG|DIST|PITCH|YAW|RSVD|RSVD|X_COOR|Y_COOR|.........|Checksum|0x4A]
  - FAULT	 : fault status 0 non-error / 1 error
  - NUM_TG : Target number
  - ID_TG  : Target ID (1st group start at [12])
