@@ -10,6 +10,8 @@ HLK-LD6001: Radar module from Hi-Link Electronic Co., Ltd.
     - Working Voltage  : 5      Volt
     - Power consumption: 1.1    Watt
 
+![image](person_visualize.png) 
+
 Protocol
     > UART protocol
         - baudrate    : 9600
