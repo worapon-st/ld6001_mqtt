@@ -1,40 +1,41 @@
 HLK-LD6001: Radar module from Hi-Link Electronic Co., Ltd.
-    - Center frequency : 60     GHz
-    - Bandwidth        : 4      GHz
-    - Transmitt power  : 12     dBm
-    - Transmitter      : 4
-    - Receiver         : 3
-    - Farthest range   : 8      meter
-    - Pitch (vertical) : ±30°
-    - Yaw (Horizontal) : ±60°
-    - Working Voltage  : 5      Volt
-    - Power consumption: 1.1    Watt
+- Center frequency : 60     GHz
+- Bandwidth        : 4      GHz
+- Transmitt power  : 12     dBm
+- Transmitter      : 4
+- Receiver         : 3
+- Farthest range   : 8      meter
+- Pitch (vertical) : ±30°
+- Yaw (Horizontal) : ±60°
+- Working Voltage  : 5      Volt
+- Power consumption: 1.1    Watt
 
 Protocol
-    > UART protocol
-        - baudrate    : 9600
-        - databits    : 8
-        - stopbits    : 1
-        - parity      : even
-        - flowcontrol : none 
-    > message definition
-        [0] header
-            - host to module = 0x44
-            - module to host = 0x4D
-        [1] message_ID
-            - request status = 0x11
-            - request data   = 0x62
-        [2] data_length 
-            - length from [4:N-3]
-            - must be 8*m
-            - length range 0-248
-        [3] reserved
-        [4:N-3] data
-        [N-2] checksum
-            - sum from [0:N-3]
-        [N-1] tail
-            - host to module = 0x4B
-            - module to host = 0x4A
+- UART protocol
+ - baudrate    : 9600
+ - databits    : 8
+ - stopbits    : 1
+ - parity      : even
+ - flowcontrol : none 
+
+- message definition
+ - [0] header
+  - host to module = 0x44
+  - module to host = 0x4D
+ - [1] message_ID
+  - request status = 0x11
+  - request data   = 0x62
+ - [2] data_length 
+  - length from [4:N-3]
+  - must be 8*m
+  - length range 0-248
+ - [3] reserved
+  - [4:N-3] data
+  - [N-2] checksum
+   - sum from [0:N-3]
+  - [N-1] tail
+    - host to module = 0x4B
+    - module to host = 0x4A
 
 1. Status mode
     host-to-module
