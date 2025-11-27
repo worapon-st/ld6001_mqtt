@@ -56,7 +56,6 @@
  - sen   : Sensitivity 10 NORMAL / 20 HIGH 
 
 > module-to-host
-                                                                  <                 data 1                    >< data(n) >
 [0x4D|0x62|datalen|0x00|FAULT|NUM_TG|RSVD|RSVD|RSVD|RSVD|RSVD|RSVD|ID_TG|DIST|PITCH|YAW|RSVD|RSVD|X_COOR|Y_COOR|.........|Checksum|0x4A]
  - FAULT	 : fault status 0 non-error / 1 error
  - NUM_TG : Target number
