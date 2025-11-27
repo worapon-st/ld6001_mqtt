@@ -10,35 +10,8 @@
 - Working Voltage  : 5      Volt
 - Power consumption: 1.1    Watt
 
-<<<<<<< HEAD
 ![image](png/person_visualize.png) 
 
-Protocol
-    > UART protocol
-        - baudrate    : 9600
-        - databits    : 8
-        - stopbits    : 1
-        - parity      : even
-        - flowcontrol : none 
-    > message definition
-        [0] header
-            - host to module = 0x44
-            - module to host = 0x4D
-        [1] message_ID
-            - request status = 0x11
-            - request data   = 0x62
-        [2] data_length 
-            - length from [4:N-3]
-            - must be 8*m
-            - length range 0-248
-        [3] reserved
-        [4:N-3] data
-        [N-2] checksum
-            - sum from [0:N-3]
-        [N-1] tail
-            - host to module = 0x4B
-            - module to host = 0x4A
-=======
 #Protocol
 1. UART protocol
 - baudrate    : 9600
@@ -46,7 +19,6 @@ Protocol
 - stopbits    : 1
 - parity      : even
 - flowcontrol : none 
->>>>>>> a4ff5c2c3950965870580fd6ad2ce63bc1214e1b
 
 2. message definition
 - [0] header
