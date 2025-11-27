@@ -11,7 +11,7 @@
 - Power consumption: 1.1    Watt
 
 <<<<<<< HEAD
-![image](person_visualize.png) 
+![image](png/person_visualize.png) 
 
 Protocol
     > UART protocol
