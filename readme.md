@@ -1,4 +1,4 @@
-#HLK-LD6001: Radar module from Hi-Link Electronic Co., Ltd.
+**HLK-LD6001: Radar module from Hi-Link Electronic Co., Ltd.**
 - Center frequency : 60     GHz
 - Bandwidth        : 4      GHz
 - Transmitt power  : 12     dBm
@@ -12,7 +12,7 @@
 
 ![image](png/person_visualize.png) 
 
-#Protocol
+**Protocol**
 1. UART protocol
 - baudrate    : 9600
 - databits    : 8
@@ -68,7 +68,7 @@
  - X_COOR : X coordinate (int8 resolution 0.1 m)
  - Y_COOR : Y coordinate (int8 resolution 0.1 m)
 
-#Mention: 
+**Mention** 
 1. This sensor can detect multiple target (8-10) but for better detect result.
  - do not block line of side of this module, the front target can block the behide target.
  - apply stable supply for maximum transmitt power and range detected.
